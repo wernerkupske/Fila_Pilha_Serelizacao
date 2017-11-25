@@ -17,17 +17,11 @@ public class Exe {
   
     public static void main(String[] args) {
         Pilha p = new Pilha();
-        Caderno c1 = new Caderno();
-        c1.nome = "Matemática";
-        c1.id = 01;
-        Caderno c2 = new Caderno();
-        c2.id = 02;
-        c2.nome = "Biologia";
-        p.empilhar(c1);
-        p.empilhar(c2);
-        p.listar();
-        p.remove();
-        p.listar();
+        p.iniPilha();
+        Fila f = new Fila();
+        f.iniFila();
+        f.gravaFila();
+        f.carregaFila();
     }
     
 }
